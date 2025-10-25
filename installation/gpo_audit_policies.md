@@ -37,13 +37,13 @@ auditpol /set /subcategory:"Credential Validation" /success:enable
 ```
 ### Verify Applied Policies via cmd
 
-After that run the command to apply the policies:
+After that, run the command to apply the policies:
 ```bash
 gpupdate/force
 ```
-This command forces an immediate update of Group Policy settings on a Windows machine instead of waiting for the next automatic refresh cycle.
+This command forces an immediate update of Group Policy settings instead of waiting for the next automatic refresh cycle.
 
-Run the command
+Ypu can also, run the command
 ```bash
 auditpol /get /category:*       #to verify the applied policies
 ```

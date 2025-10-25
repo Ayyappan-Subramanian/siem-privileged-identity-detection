@@ -54,16 +54,3 @@ The domain name: lab.local
 **6. Network Time Protocol (NTP)**
 
 - Seems simple but important part of setup. Sync all VMs to the same time source so that you don't find any confusion during log correlation
-
----
-
-
-(This should be added in the configuration part)
-### GPO / Local Policy baseline
-- Local Policies -> Audit Policy: enable audit account logon events, account management, logon events, privilege use, object access (File Share, Registry if needed)
-- Advanced GPO audit categories: Account Logon (Credential Validation), Account Management, Logon/Logoff (Logon, Logoff, Special Logon), Object Access (File Share), Privilege Use (SeDebugPrivilege, SeTcbPrivilege)
-
-
-**Notes on testing**:
-- After changing GPOs, run `gpupdate /force` and confirm events like 4720 (user created), 4769 (TGS request), 4624 (successful logon) appear in the Security log.
-
