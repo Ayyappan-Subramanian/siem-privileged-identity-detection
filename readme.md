@@ -36,8 +36,11 @@ Built to showcase real-world **SOC detection engineering** and **incident respon
 ## 🧠 Key Features
 
 🕵️ Privileged Identity Monitoring – Detects suspicious admin logins, privilege escalations, and AD account abuses.
+
 ⚙️ Cross-Platform Visibility – Integrates Windows Sysmon and Linux Auditd logs into Splunk/ELK.
+
 📡 MITRE ATT&CK Mapping – Detection rules aligned to ATT&CK framework.
+
 📊 Custom Dashboards – Visualize user access anomalies and privilege activities.
 
 🧪 Red Team Simulation – Executes real attacks using Kali Linux for validation.
