@@ -1,6 +1,6 @@
 # Privileged Identity Misuse Detection — SIEM Project
 
-**Purpose:** Splunk-based detection system in a virtual environment, ingesting logs from Active Directory/LDAP to monitor for privileged identity misuse
+**Purpose:** Splunk-based detection system in a virtual environment, ingesting logs from AD/LDAP to monitor for privileged identity misuse
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ The **Privileged Identity Misuse Detection System** is a SIEM-driven project des
 
 It simulates **real-world attacks** such as Pass-the-Hash, Kerberoasting, privilege escalation, unauthorized admin logins, and lateral movement, while leveraging Splunk or ELK Stack as the central log correlation and detection engine.
 
-🧩 Built to showcase real-world **SOC detection engineering** and **incident response capabilities.**
+Built to showcase real-world **SOC detection engineering** and **incident response capabilities.**
 
 
 ## 📚 Recommended Reading Flow To Quick Start
@@ -36,11 +36,8 @@ It simulates **real-world attacks** such as Pass-the-Hash, Kerberoasting, privil
 ## 🧠 Key Features
 
 🕵️ Privileged Identity Monitoring – Detects suspicious admin logins, privilege escalations, and AD account abuses.
-
 ⚙️ Cross-Platform Visibility – Integrates Windows Sysmon and Linux Auditd logs into Splunk/ELK.
-
 📡 MITRE ATT&CK Mapping – Detection rules aligned to ATT&CK framework.
-
 📊 Custom Dashboards – Visualize user access anomalies and privilege activities.
 
 🧪 Red Team Simulation – Executes real attacks using Kali Linux for validation.
@@ -141,27 +138,20 @@ index=sysmon | stats count by Image, ParentImage
 ## 🔒 Security Hardening
 
 - Enforce least-privilege access in Splunk/ELK.
-
 - Use TLS for log forwarding.
-
 - Implement role-based dashboard access.
-
 - Regular rotation of SIEM credentials.
 
 
 ## 🧩 Future Scope
 
 - SOAR Integration: Optional XSOAR / Shuffle / TheHive for automated alert response.
-
 - Email Alerts: Configured via Splunk alert actions.
-
 - API Hooks: REST API endpoints for future enrichment modules.
 
 
 ## 📚 References
 
 - [MITRE ATT&CK](https://attack.mitre.org/)
-
 - [Splunk](https://www.splunk.com/)
-
 - [Sysmon Config by SwiftOnSecurity](https://github.com/SwiftOnSecurity/sysmon-config)
