@@ -2,8 +2,6 @@
 
 This section describes how the system is strcutured - the overall design, data flow, components and connections.
 
-**High level diagram**: include `diagrams/network-arch.drawio` and exported PNG.
-
 **Components**:
 - Windows Server (Domain Controller - AD) — runs AD DS, Security Event Logs, KDC; event source for 4720/4728/4769/etc.
 - Windows Client(s) — User activity, Sysmon, PowerShell, process execution. Consists of different roles in OU: Member/Admin/Analyst

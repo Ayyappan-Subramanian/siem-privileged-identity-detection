@@ -17,9 +17,3 @@
 
 **Expected outcomes**:
 - Working detections with test cases, documented runbook steps, and reproducible artifacts (sample logs, saved searches).
-
-<br>
-<div style="display: flex; justify-content: space-between;">
-  <a href="README.md">⬅️ Previous: Introduction</a>
-  <a href="02_architecture.md">Next: Architecture ➡️</a>
-</div>

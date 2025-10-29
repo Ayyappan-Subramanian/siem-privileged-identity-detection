@@ -158,7 +158,7 @@ This same SPL query can be Saved As for configuring alerts in Splunk so that an 
 # 3. Incident Response
 
 
-| Containment | Action and Execution Details |
+| Phase | Action and Execution Details |
 --------------|------------------------------|
 Containment | Immediately disable the attacker's source account. Using Powershell `Disable-ADAccount -Identity "member01@lab.local"`. This stops further TGS requests and immediate malicious activity.|
 Eradication | Reset the target password and force a complex password reset on the compromised service account (service_account@lab.local). This invalidates the plaintext password obtained by the attacker.|
