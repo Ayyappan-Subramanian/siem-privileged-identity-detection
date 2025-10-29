@@ -1,5 +1,7 @@
 # Privileged Identity Misuse Detection — SIEM Project
 
+**Purpose:** Splunk-based detection system in a virtual environment, ingesting logs from Active Directory/LDAP to monitor for privileged identity misuse
+
 ## Table of Contents
 
 1. [🚀 Introduction](#-introduction)
